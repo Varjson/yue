@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				color: #333;
+				font-family: "微软雅黑";
+			}
+			div,ul,li{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+			}
+			.header{
+				background: #fff;
+				height: 110px;
+			}
+			.header-box{
+				width: 1200px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.header a{
+				float: left;
+				height: 50px;
+				margin-top: 30px;
+				text-decoration: none;
+			}
+			.header a img{
+				width: 200px;
+				height: 50px;
+				vertical-align: middle;
+			}
+			.header a span{
+				font-size: 22px;
+				color: #000;
+				font-weight: bold;
+			}
+			.header-right{
+				width: 300px;
+				float: right;
+				margin-top: 30px;
+			}
+			.header-right ul{
+				height: 20px;
+				line-height: 20px;
+				list-style: none;
+			}
+			.header-right ul li{
+				float: left;
+				font-size: 14px;
+				line-height: 20px;
+				margin-right: 20px;
+				color: #666666;
+			}
+			.header-right-bottom input{
+				width: 210px;
+			    height: 22px;
+			    float: left;
+			    line-height: 22px;
+			    border: 0;
+			    font-size: 13px;
+			    color: #999;
+			    outline: 0;
+			    margin: 8px 0 0 10px;
+			    padding: 4px 0 0 10px;
+			    background: #eaeaea;
+			}
+			.nav{
+				width: 100%;
+				height: 50px;
+				background:#00c1de ;
+			}
+			.nav-list{
+				width: 1200px;
+				height: 50px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.nav-list ul{
+				height: 50px;
+			}
+			.nav-list ul li{
+				width: 120px;
+				height: 50px;
+				color: #FFFFFF;
+				float: left;
+			}
+			
+			.nav-list ul li a{
+				color: #fff;
+			    width: 120px;
+			    height: 50px;
+			    line-height: 50px;
+			    text-align: center;
+			    display: block;
+			    font-size: 17px;
+			    font-weight: bold;
+			}
+			.nav-list ul li a:hover{
+				/*background: #00C1DE;*/
+				background: #02afca;
+			}
+			.nav-list-one{
+				position: relative;
+			}
+			.nav-list-one ul{
+				width: 120px;
+				position: absolute;
+				top: 50px;
+				left: 0;
+				height: 252px;
+				z-index: 10;
+			}
+			.nav-list-one ul li{
+				width: 120px;
+			    display: block;
+			    text-align: center;
+			    background: #FFFFFF;
+			    font-size: 14px;
+			    height: 36px;
+			    line-height: 36px;
+			    color: #666;
+			    /* margin: 0 auto; */
+			    border-bottom: 1px solid #e6e6e6;
+			    overflow: hidden;
+			}
+			.banner{
+				width: 100%;
+				height: 450px;
+			    overflow: hidden;
+			    position: relative;
+			    min-width: 1200px;
+			    background: url(img/3.jpg) no-repeat;
+			    background-size: cover;
+			}
+			.banner-word{
+				margin-top:100px ;
+				margin-left: 350px;
+				color: #FFFFFF;
+			}
+			.banner-word p{
+				font-size: 44px;
+				font-weight: 400;
+				margin-bottom: 5px;
+			}
+			.banner-word span{
+				font-size: 20px;
+			}
+			.content{
+				width: 100%;
+			    float: left;
+			    margin-top: 20px;
+			}
+			.content-w{
+				width: 1200px;
+				margin: 0 auto;
+				position: relative;
+			}
+			.new{
+				width: 100%;
+			    height: 270px;
+			    float: left;
+			    padding: 20px 0 0;
+			    background: #FFFFFF;
+			}
+			.new-left{
+				width: 480px;
+				height: 270px;
+				float: left;
+				background: #fff;
+			}
+			.new-right{
+				width: 700px;
+			    float: left;
+			    margin-left: 20px;
+			    background: #fff;
+			}
+			.new-right-top{
+				width: 100%;
+			    float: left;
+			    height: 32px;
+			    border-bottom: 1px solid #dcdcdc;
+			}
+			.new-right-top-1{
+				float: left;
+			    line-height: 1;
+			}
+			.new-right-top-1 a{
+				float: left;
+			    display: inline-block;
+			    height: 32px;
+			    position: relative;
+			    z-index: 2;
+			    color: #646464;
+			    font-size: 20px;
+			    font-weight: bold;
+			}
+			.new-right-top-1 span{
+			float: left;
+  			width: 30px;
+ 		   	height: 32px;
+			display: inline-block;
+    		background: url(img/line.png) no-repeat 50% 0;
+			}
+			.new-right-top-1-on{
+				border-bottom: 4px solid #00c1de;
+				height: 32px;
+			    color: #333;
+			}
+			.new-right-top-2{
+				float: right;
+			    color: #999;
+			    font-size: 15px;
+			    line-height: 1.5;
+			}
+			.new-right-top-2 a{
+				    float: left;
+				    color: #999;
+			}
+			.new-right-bottom{
+				width: 100%;
+			    float: left;
+			    margin-top: 5px;
+			}
+			.new-right-bottom ul{
+				width: 100%;
+    			float: left;
+			}
+			.new-right-bottom ul li{
+				width: 100%;
+			    height: 32px;
+			    float: left;
+			    line-height: 32px;
+			    font-size: 16px;
+			    color: #333;
+			    background: url(img/circle.png) no-repeat 0 50%;
+			}
+			.new-right-bottom ul li a{
+				float: left;
+			    color: #333;
+			    margin-left: 13px;
+			}
+			.new-right-bottom ul li span{
+				float: right;
+    color: #999;
+			}
+			
+			.work{
+				width: 100%;
+			    height: 262px;
+			    float: left;
+			    margin-top: 40px;
+			    background: #FFFFFF;
+			}
+			.work-left{
+				    width: 768px;
+			    height: 262px;
+			    float: left;
+			    background: #fff;
+			}
+			.work-left-top{
+				border-bottom: 1px solid #dcdcdc;
+			    height: 37px;
+			}
+			.work-left-top span{
+				    border-bottom: 4px solid #00c1de;
+			    padding-bottom: 8px;
+			    font-size: 20px;
+			    font-weight: bold;
+			}
+			.work-left-top a{
+				    float: right;
+			    font-size: 14px;
+			    color: #aeaeae;
+			    margin-top: 6px;
+			}
+			.work-left-bottom{
+				width: 768px;
+			    margin: 20px auto 0;
+			    font-size: 0;
+			}
+			.work-left-bottom img{
+				width: 235px;
+				height: 200px;
+			}
+			.work-left-bottom-bg{
+				margin-right: 30px;
+			}
+			.work-right{
+				    width: 367px;
+			    height: 262px;
+			    float: right;
+			}
+			.work-right-top{
+				border-bottom: 1px solid #dcdcdc;
+			    height: 37px;
+			    margin-bottom: 10px;
+			}
+			.work-right-top span{
+				    border-bottom: 4px solid #00c1de;
+			    padding-bottom: 8px;
+			    font-size: 20px;
+			    font-weight: bold;
+			}
+			.work-right-top a{
+				float: right;
+			    font-size: 14px;
+			    color: #aeaeae;
+			    margin-top: 6px;
+			}
+			.work-right-bottom li{
+				    width: 100%;
+			    height: 32px;
+			    float: left;
+			    line-height: 32px;
+			    font-size: 16px;
+			    color: #333;
+			    background: url(img/circle.png) no-repeat 0 50%;
+			}
+			.work-right-bottom li a{
+				    float: left;
+			    color: #333;
+			    margin-left: 13px;
+			    text-decoration: none;
+			}
+			.work-right-bottom li span{
+				float: right;
+		    color: #999 !important;
+			}
+			.range{
+				    width: 100%;
+			    float: left;
+			    margin: 20px 0 45px 0;
+			}
+			.range-w{
+				width: 1200px;
+			    margin: 0 auto;
+			    position: relative;
+			}
+			.range-top{
+				width: 100%;
+			    float: left;
+			    height: 32px;
+			    border-bottom: 1px solid #dcdcdc;
+			}
+			.range-top span{
+				    float: left;
+			    display: inline-block;
+			    height: 32px;
+			    position: relative;
+			    z-index: 2;
+			    font-size: 20px;
+			    font-weight: bold;
+			    border-bottom: 4px solid #00c1de;
+			    color: #333;
+			}
+			.range-top a{
+				    float: right;
+			    color: #999;
+			}
+			.range-bottom{
+				    width: 100%;
+			    height: 300px;
+			    float: left;
+			    margin-top: 20px;
+			}
+			.bottom{
+				width: 100%;
+		    height: 215px;
+		    float: left;
+		    background: #00b6d2;
+		    min-width: 1200px;
+			}
+			.bottom-w{
+				    height: 215px;
+		    background: #00b6d2;
+		    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+			}
+			.bottom-top{
+				    width: 100%;
+		    height: 30px;
+		    float: left;
+		    text-align: center;
+		    margin-top: 12px
+			}
+			.bottom-top ul{
+				    margin: 0 auto;
+			}
+			.bottom-top ul li{
+				    display: inline-block;
+			    color: #fff;
+			    font-size: 15px;
+			    line-height: 30px;
+			    padding: 0 30px 0 24px;
+			    background: url(img/bottom.jpg) no-repeat 100% 50%;
+			}
+			.bottom-top ul li a{
+				display: inline-block;
+    color: #fff;
+			}
+			.bottom-bottom{
+				    width: 100%;
+			    float: left;
+			    margin-top: 22px;
+			}
+			.bottom-bottom-left{
+				    width: 385px;
+			    float: left;
+			}
+			.bottom-bottom-left-1{
+				    width: 100%;
+			    float: left;
+			    font-size: 17px;
+			    color: #fff;
+			}
+			.bottom-bottom-left-2{
+				    width: 100%;
+			    float: left;
+			    font-size: 14px;
+			    line-height: 30px;
+			    color: #f7f7f7;
+			    margin-top: 10px;
+			}
+			.bottom-bottom-middle{
+				    width: 400px;
+			    float: left;
+			    margin-left: 55px;
+			}
+			.bottom-bottom-middle-1{
+				    width: 100%;
+			    float: left;
+			    font-size: 17px;
+			    color: #fff;
+			}	
+			.bottom-bottom-middle-2{
+				    width: 100%;
+			    float: left;
+			    font-size: 14px;
+			    line-height: 30px;
+			    color: #f7f7f7;
+			    margin-top: 10px;
+			}		
+			.bottom-bottom-right{
+				float: left;
+				margin: 0 20px;
+			}
+			.bottom-bottom-right p{
+				    width: 88px;
+			    text-align: center;
+			    font-size: 15px;
+			    color: #fff;
+			}
+			.bottom-bottom-right img{
+				    width: 88px;
+			    height: 88px;
+			    margin-top: 10px;
+			}
+			.fin{
+				width: 100%;
+				height: 50px;
+				line-height: 50px;
+				background: #FFFFFF;
+			}
+			.fin-w{
+				    width: 1200px;
+		    margin: 0 auto;
+		    position: relative;
+			}
+			.fin-w ul{
+			    width: 1200px;
+			    margin-left: auto;
+			    margin-right: auto;
+			}
+			.fin-w ul li{
+				    float: left;
+			    font-size: 14px;
+			    font-family: '微软雅黑';
+			    line-height: 50px;
+			}
+			.fin-w ul li a{
+				    font-size: 13px;
+			    color: #333333;
+			    font-family: '微软雅黑';
+			}
+			.fin-w .fin-b{
+				width: 24px;
+			    text-align: center;
+			    color: #dcdcdc;
+			}
+			.fin-w p{
+				float: right;
+				font-size: 14px;
+			    font-family: '微软雅黑';
+			    line-height: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--头部Logo那部分开始-->
+		<div class="header">
+			<div class="header-box">
+			<a href="index.html">
+				<img src="img/2.png"/>
+				<span>广东通超信息技术有限公司</span>
+			</a>
+			<div class="header-right">
+				<ul class="header-right-top">
+					<li>中国通信</li>
+					<li>通信网群</li>
+					<li>微信</li>
+					<li>邮箱</li>
+				</ul>
+				<div class="header-right-bottom">
+					<input type="text" class="search_txt" maxlength="20" id="q" name="q" autocomplete="off" value="请输入关键词" onfocus="if(this.value=='请输入关键词') {this.value='';this.focus();}" onblur="if(this.value==''){this.value='请输入关键词'}">
+				</div>
+			</div>
+			</div>
+		</div>
+		<!--头部Logo那部分结束-->
+		
+		<!--导航开始-->
+		<div class="nav">
+			<div class="nav-list">
+				<ul>
+					<li><a href="#">网站首页</a></li>
+					<li><a href="#">关于我们</a></li>
+					<li><a href="#">新闻中心</a></li>
+					<li><a href="#">党群工作</a></li>
+					<li><a href="#">工程案例</a></li>
+					<li>
+						<a href="#" class="nav-list-one">企业文化
+							<ul>
+								<li>品牌标识</li>
+								<li>文化理念</li>
+								<li>员工活动</li>
+								<li>文化艺苑</li>
+							</ul>
+						</a>
+					</li>
+					<li><a href="#">科技创新</a></li>
+					<li><a href="#">人力资源</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">社会责任</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航结束-->
+		
+		<!--banner图开始-->
+		<div class="banner">
+			<div class="banner-word">
+				<p>创新</p>
+				<span>就是任何工作都要追求最佳水平。</span>
+				<!--<p>团队</p>
+				<span>就是能够和他人协调来共同承担责任</span>
+				<p>敬业</p>
+				<span>就是愿意承担责任和有能力承担责任</span>-->
+			</div>
+		</div>
+			
+		<!--banner图结束-->
+		
+		<!--content区域开始-->
+		<div class="content">
+			<div class="content-w">
+				<!--新闻区域开始-->
+					<div class="new">
+						<div class="new-left">
+							<img src="img/5.png"/>
+						</div>
+						<div class="new-right">
+							<div class="new-right-top">
+								<div class="new-right-top-1">
+									<a href="#" style="color: #333333;" class="new-right-top-1-on">集团动态</a><span></span>
+									<a href="#">下属动态</a><span></span>
+									<a href="#">媒体报道</a><span></span>
+									<a href="#">专题专栏</a>
+								</div>
+								<div class="new-right-top-2">
+									<a href="#">更多>></a>
+								</div>
+							</div>
+							<div class="new-right-bottom">
+								<ul>
+									<li><a href="#">贵在富有一颗报效企业之心</a><span>2016-11-03</span></li>
+									<li><a href="#">我认识的“敬业奉献的模范共产党员”刘新来</a><span>2016-11-03</span></li>
+									<li><a href="#">刘新来在青藏线二三事</a><span>2016-11-03</span></li>
+									<li><a href="#">榜样树标杆 明镜正衣冠</a><span>2016-11-03</span></li>
+									<li><a href="#">生命在奉献中升华</a><span>2016-11-03</span></li>
+									<li><a href="#">汗洒祖国大地　一生奉献中国铁建</a><span>2016-11-03</span></li>
+									<li><a href="#">中国铁建追授刘新来荣誉称号表彰大会在济南召开给提个他给提个她给她给提个...</a><span>2016-11-03</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				<!--新闻区域结束-->
+				
+					
+				<!--工程案例开始-->
+				<div class="work">
+					<div class="work-left">
+						<div class="work-left-top">
+							<span>工程案例</span>
+							<a href="#">更多>></a>
+						</div>
+						<div class="work-left-bottom">
+							<img class="work-left-bottom-bg" src="img/work-3.png"/>
+							<img class="work-left-bottom-bg" src="img/work-2.png"/>
+							<img src="img/work-1.png"/>
+						</div>
+					</div>
+					<div class="work-right">
+						<div class="work-right-top">
+							<span>工程管理</span>
+							<a href="#">更多>></a>
+						</div>
+						<div class="work-right-bottom">
+							<ul>
+								<li><a href="#">谷竹项目部积极开展“安全生产月”活动</a><span>05-04</span></li>
+								<li><a href="#">科学运用六步节能法，积极、主动、扎实...</a><span>05-04</span></li>
+								<li><a href="#">安全之花处处开放</a><span>05-04</span></li>
+								<li><a href="#">二○一三年度公司在建工程重大危险源、...</a><span>05-04</span></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!--工程案例结束-->
+				
+				<!--业务领域开始-->
+				<div class="range">
+					<div class="range-w">
+						<div class="range-top">
+							<span>业务领域</span>
+							<a href="#">更多>></a>
+						</div>
+						<div class="range-bottom">
+							<img src="img/range.jpg"/>
+						</div>
+					</div>
+				</div>
+				<!--业务领域结束-->
+				
+			</div>
+				
+		</div>
+		
+		<!--content区域结束-->
+		<!--底部开始-->
+				<div class="bottom">
+					<div class="bottom-w">
+						<div class="bottom-top">
+							<ul>
+								<li><a href="#">国资委</a></li>
+								<li><a href="#">中央企业</a></li>
+								<li><a href="#">国有重点企业</a></li>
+								<li><a href="#">中国通超信息总公司</a></li>
+								<li><a href="#">通超信息网站群</a></li>
+								<li><a href="#">通超信息学会</a></li>
+							</ul>
+						</div>
+						<div class="bottom-bottom">
+							<div class="bottom-bottom-left">
+								<div class="bottom-bottom-left-1">
+									公司简介
+								</div>
+								<div class="bottom-bottom-left-2">中铁十四局集团第二工程有限公司，前身系中国人民解放军铁道兵第四师第十七团，1951年组建于朝鲜战场，1984年奉中央军委、国务院命令，集体转业并入铁道部，成立铁...
+								<a href="#" style="color: #FFFFFF;">[详情]</a>
+								</div>
+							</div>
+							<div class="bottom-bottom-middle">
+								<div class="bottom-bottom-middle-1">
+									联系我们
+								</div>
+								<div class="bottom-bottom-middle-2">						
+       广州通超信息技术有限公司<br />
+        地址：广州市南村万达广场万惠一路52-54号四楼<br />
+        邮编：271000
+        
+								</div>
+							</div>
+							<div class="bottom-bottom-right">
+								<p>联系我们</p>
+								<img src="img/chat.jpg"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--底部结束-->
+				<!--IPC开始-->
+				<div class="fin">
+					<div class="fin-w">
+						<ul>
+							<li><a href="#">网站地图</a><li class="fin-b">|</li></li>
+							<li><a href="#">联系我们</a><li class="fin-b">|</li></li>
+							<li><a href="#">版权声明</a></li>
+						</ul>
+						<p>广州通超信息技术有限公司 版权所有©20018-2028 京ICP备1111111号</p>
+					</div>
+					
+				</div>
+				<!--IPC结束-->
+	</body>
+</html>
