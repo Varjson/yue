@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href="Public\Home\css\slick.css" type="text/css" rel="stylesheet">
+		<link href="Public\Home\css\style.css" type="text/css" rel="stylesheet">
+
+		<script type="text/javascript" src="Public\Home\js\jquery.js"></script>
+		<script type="text/javascript" src="Public\Home\js\ie6orie7.js"></script>
+		<script type="text/javascript" src="Public\Home\js\slick.js"></script>
+		<!-- <script type="text/javascript" src="/Public/Home/js/js.js"></script>
+ -->
+		<!--[if IE 8]>
+<script type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+		<meta name="keywords" content="广州娇兰佳人化妆品连锁有限公司,Plantsdiary植物日记">
+		<meta name="description" content="广州娇兰佳人化妆品连锁有限公司">
+		<title>舞台设备</title>
+	</head>
+
+	<body>
+		<div class="header">
+			<div class="layout heat clearfix">
+				<a class="fl website" href="https://plantsdiary.tmall.com/" target="_blank"><img src="icon1.png"> 官方商城 </a>
+				<a class="fl logo" style="width: 100px; height: 100px; margin: 0 0 0 150px;" href="index.htm"><img style="height: 100px; height: 100px;" src="three.jpg"></a>
+				<div class="fr line">
+					<div class="serve clearfix">
+						<div class="fr atten">
+							<span>关注</span>
+							<a class="w1 icon" href="javascript:;"></a>
+							<a class="w2 icon" href=""></a>
+						</div>
+
+					</div>
+					<form class="clearfix fr" action="/index.php/Product/index">
+						<input type="text" placeholder="请输入关键字" class="s_text" name="search">
+						<input type="submit" class="all_btn" value="">
+					</form>
+				</div>
+			</div>
+			<div class="nav_box">
+				<div class="layout">
+					<ul class="nav clearfix">
+						<li class="first on">
+							<a href="index.php\Intro\index.htm">首页</a>
+						</li>
+						<li>
+							<a href="index.php\Product\index.htm">关于我们</a>
+						</li>
+						<li>
+							<a href="index.php\Product\star.htm">工程案例</a>
+						</li>
+						<li>
+							<a href="index.php\Product\box.htm">产品展示</a>
+						</li>
+						<li>
+							<a href="index.php\News\index.htm">新闻咨询</a>
+						</li>
+						<li>
+							<a href="index.php\Contact\index.htm">视频中心</a>
+						</li>
+						<li>
+							<a href="index.php\Net\index.htm">联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function() {
+				var timer = null
+				$('.clist li').mouseenter(function() {
+					var _this = $(this)
+					clearTimeout(timer)
+					timer = setTimeout(function() {
+						_this.children('.seMenu').stop(true, true).slideDown()
+					}, 300)
+				}).on('mouseleave', function() {
+					clearTimeout(timer)
+					$(this).children('.seMenu').stop(true, true).slideUp()
+				})
+
+				$('.item').click(function() {
+					$(this).children('dl').slideDown()
+					$(this).siblings().children('dl').slideUp()
+				})
+
+			})
+		</script>
+		<style type="text/css">
+			.clearfix:after {
+				content: ".";
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+				line-height: 0;
+				font-size: 0
+			}
+			
+			.nav li {
+				position: relative;
+			}
+			
+			.seMenu {
+				position: absolute;
+				left: 0;
+				top: 75px;
+				z-index: 999;
+				width: 150px;
+				margin: 0 auto;
+				background: #fff;
+				display: none
+			}
+			
+			.seMenu .item {}
+			
+			.seMenu .item dl {
+				display: none;
+			}
+			
+			.seMenu .item .tags {
+				border-bottom: 1px solid #e0e0e0;
+				cursor: pointer;
+				height: 35px;
+				line-height: 35px;
+				color: #333 text-align: left;
+				font-size: 16px;
+				padding-left: 20px
+			}
+			
+			.seMenu .item dl dd a {
+				display: block;
+				line-height: 35px;
+				border: none;
+				color: #8e8e8e;
+			}
+			
+			.seMenu .item dl dd {
+				background: #fff url(Public/Home/images/spanL.jpg) 16px 20px no-repeat;
+				font-size: 16px;
+				height: 35px;
+				line-height: 35px;
+				color: #333;
+				text-align: left;
+				border-bottom: 1px dashed #e0e0e0;
+				padding-left: 30px
+			}
+			
+			.seMenu .item dl dd a:hover {
+				color: #c60900
+			}
+			
+			.seMenu .item.active .tags {
+				background: #c60900;
+				color: #fff;
+			}
+		</style>
+		<div class="banner">
+			<!--<div style="background: url(Uploads/Banner/original_img/one.jpg) center no-repeat; height: 911px; background-size: 100% 100%; ">
+				<a href="index.php\Intro\index.htm"></a>
+			</div>-->
+			<div style="background: url(0.jpg) no-repeat ;background-size: 100% 100%; height: 700px; ">
+				<div class="fl" style=" color: #FFFFFF;   text-shadow: 0 1px 0px rgba(255, 255, 255, 1), 0 -1px 1px rgba(0, 0, 0, .3); width: 30%; height: 700px; text-align: center; ">
+					<p style="font-size: 28px; font-weight: bold; margin-top: 220px;">产品订制</p>
+					<span style="font-size: 20px; margin-top: 10px; display: inline-block;">专业生产、设计销售各种器材</span>
+				</div>
+				<!--<img class="fl" style="height: 700px;" width="70%" src="0.jpg"/>-->
+			</div>
+			<!--<div style="background: url(Uploads/Banner/original_img/two.jpg) center no-repeat; height: 911px;">
+				<a href="index.php\Product\detail\id\12.htm"></a>
+			</div>
+			<div style="background: url(Uploads/Banner/original_img/one.jpg) center no-repeat; height: 911px;">
+				<a href="index.php\Product\detail\id\29.htm"></a>
+			</div>-->
+			<!-- <div style="background: url(/Public/Home/images/banner.png) center no-repeat; height: 911px;"><a href=""></a></div>
+	<div style="background: url(/Public/Home/images/banner.png) center no-repeat; height:911px;"><a href=""></a></div> -->
+		</div>
+		<div class="main layout">
+			
+			<!--!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+			<div class="main1 clearfix">
+				<div class="clearfix main1_l fl fd" style="background: url(1.jpg);">
+					<a href="#">
+						<!--<div class="pic"><img src="Uploads\Banner\original_img\1514855716.jpg"></div>-->
+						<div class="tit">
+							<!--<div><img src="http://jiaolan.sz2.hostadm.net/Uploads/attached/image/20171229/20171229062807_52895.png" alt=""></div>-->
+							<h2>关于我们</h2>
+						</div>
+					</a>
+				</div>
+				<div class="main1_r fr ">
+					<div class="clearfix fd main1_rt" style="background: url(11.jpg) no-repeat; background-size: 100% 100%;">
+						<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Intro/beauty">-->
+							<!--<div class="pic"><img src="Uploads\Banner\original_img\1514860093.jpg"></div>-->
+							<div class="tit">
+								<h3>舞台  <i></i> 设备 </h3>
+							</div>
+						<!--</a>-->
+					</div>
+					<div class="clearfix main1_rb">
+						<div class="fd pvid fl" style="background:url(2.jpg) no-repeat; background-size: 100% 100%;">
+							<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Intro/video">-->
+								<!--<div class="pic"><img src="Uploads\Banner\original_img\1513999426.png"></div>-->
+								<div class="tit">
+									<h1>Brand video</h1>
+									<h2> 品牌视频  <!--<em class="icon"></em>--></h2>
+								</div>
+							<!--</a>-->
+						</div>
+						<div class="fd jinx fr" style="background: url(11.jpg) no-repeat; background-size: 100% 100%;">
+							<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Intro/index">-->
+								<!--<div class="pic"><img src="Uploads\Banner\original_img\1514855807.jpg"></div>-->
+								<div class="tit">
+									<h2>匠心工程  </h2>
+								</div>
+							<!--</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+			<div class="main2">
+				<h2>产品 <i></i> 展示</h2>
+				
+			</div>
+			<div class="main3 clearfix">
+				<div class="fd fl skinl" style="background: url(0.jpg) no-repeat; background-size: 100% 100%;">
+					<!--<div class="pic"><img src="Uploads\Banner\original_img\1514000163.png"></div>-->
+					<div class="tit">
+						<!--<em class="icon"></em>-->
+						<h2>标准机箱-8U</h2>
+						<p>航空箱系列产品</p>
+						<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Net/index"> 探索更多 <i class="icon"></i></a>
+					</div>
+				</div>
+				<div class="fd fr skinr" style="background: url(01.jpg) no-repeat; background-size:100% 100% ;">
+					<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index">-->
+						<!--<div class="pic"><img src="Uploads\Banner\original_img\1516697524.jpg"></div>-->
+						<div class="tit">
+							<!--<em class="icon" style="background-image: url(Public/Home/images/icon5_2.png);
+}"></em>-->
+							<h2>简易灯钩 </h2>
+							<p>扣件系列产品</p>
+							<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index"> 探索更多 <i class="icon"></i></a>
+							<!-- <h2>美肌酵室</h2>
+				<p>定制你的专属美丽方案 </p> -->
+						</div>
+					<!--</a>-->
+				</div>
+			</div>
+			
+			<div class="main3 clearfix" style="margin-top: 5px;">
+				<div class="fd fl skinl" style="background: url(1.jpg) no-repeat; background-size:100% 100% ;">
+					<!--<div class="pic"><img src="Uploads\Banner\original_img\1514000163.png"></div>-->
+					<div class="tit">
+						<!--<em class="icon"></em>-->
+						<h2>插销式三角架</h2>
+						<p>桁架系列产品</p>
+						<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Net/index"> 探索更多 <i class="icon"></i></a>
+					</div>
+				</div>
+				<div class="fd fr skinr" style="background: url(11.jpg) no-repeat; background-size: 100% 100%;">
+					<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index">-->
+						<!--<div class="pic"><img src="Uploads\Banner\original_img\1516697524.jpg"></div>-->
+						<div class="tit">
+							<!--<em class="icon" style="background-image: url(Public/Home/images/icon5_2.png);
+}"></em>-->
+							<h2>螺丝四方架</h2>
+							<p>桁架系列产品</p>
+							<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index"> 探索更多 <i class="icon"></i></a>
+							<!-- <h2>美肌酵室</h2>
+				<p>定制你的专属美丽方案 </p> -->
+						</div>
+					<!--</a>-->
+				</div>
+			</div>
+			<!--------------------------------------------------->
+			<div class="main2">
+				<h2>工程 <i></i> 案例</h2>
+				
+			</div>
+			<div class="main3 clearfix">
+				<div class="fd fl skinl" style="background: url(0.jpg) no-repeat; background-size: 100% 100%;">
+					<!--<div class="pic"><img src="Uploads\Banner\original_img\1514000163.png"></div>-->
+					<div class="tit">
+						<!--<em class="icon"></em>-->
+						<h2>标准机箱-8U</h2>
+						<p>航空箱系列产品</p>
+						<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Net/index"> 探索更多 <i class="icon"></i></a>
+					</div>
+				</div>
+				<div class="fd fr skinr" style="background: url(01.jpg) no-repeat; background-size:100% 100% ;">
+					<!--<a href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index">-->
+						<!--<div class="pic"><img src="Uploads\Banner\original_img\1516697524.jpg"></div>-->
+						<div class="tit">
+							<!--<em class="icon" style="background-image: url(Public/Home/images/icon5_2.png);
+}"></em>-->
+							<h2>简易灯钩 </h2>
+							<p>扣件系列产品</p>
+							<a class="more" href="http://jiaolan.sz2.hostadm.net/index.php/Contact/index"> 探索更多 <i class="icon"></i></a>
+							<!-- <h2>美肌酵室</h2>
+				<p>定制你的专属美丽方案 </p> -->
+						</div>
+					<!--</a>-->
+				</div>
+			</div>
+			
+		</div>
+		<div class="footer">
+			
+			<div class="foob layout tc">
+				<div class="clearfix direct">
+					<a class="wmap" href="">网站地图</a> <em>|</em>
+					<a href="">隐私保护</a> <em>|</em>
+					<a href="">免责声明</a>
+				</div>
+				<p id="aa">版權所有 © 2011 广州娇兰佳人化妆品连锁有限公司 km-machine.com.cn All rights reserved
+					<a href="http://www.miitbeian.gov.cn" target="_blank">粤ICP备14000798号-2</a>
+					<script src="https://s19.cnzz.com/z_stat.php?id=1271652988&web_id=1271652988" language="JavaScript"></script>
+				</p>
+			</div>
+			<style type="text/css">
+				#aa a {
+					color: #9e9792;
+				}
+			</style>
+		</div>
+	</body>
+
+</html>
+
+<style type="text/css">
+	.main3 .skinr {
+		width: 599px;
+		height: 439px;
+		overflow: hidden;
+	}
+	
+	.main3 .skinr .tit {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		text-align: left;
+		padding-top: 82px;
+		margin-left: 98px;
+	}
+	
+	.main3 .skinr .tit .more i {
+		width: 7px;
+		height: 13px;
+		background-image: url(Public/Home/images/moreon.png);
+		vertical-align: middle;
+		margin-left: 10px;
+	}
+	
+	.main3 .skinr .tit em {
+		width: 42px;
+		height: 54px;
+		background-image: url(Public/Home/images/icon5.png);
+	}
+	
+	.main3 .skinr .tit h2 {
+		font-size: 32px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		color: #534a44;
+	}
+	
+	.main3 .skinr .tit p {
+		font-size: 22px;
+		color: #534a44;
+	}
+	
+	.main3 .skinr .tit .more {
+		display: inline-block;
+		width: 120px;
+		height: 35px;
+		background: #534a44;
+		text-align: center;
+		line-height: 35px;
+		font-size: 12px;
+		color: #fff;
+		margin-top: 50px;
+	}
+	
+	.main1 .main1_r .jinx .tit {
+		padding-top: 113px;
+	}
+	
+	.main1 .main1_r .jinx .tit h2 {
+		text-shadow: 0 1px 0px rgba(255, 255, 255, 1), 0 -1px 1px rgba(0, 0, 0, .3);
+	}
+	
+	.main1 .main1_l .tit h2 {
+		text-shadow: 0 1px 0px rgba(255, 255, 255, 1), 0 -1px 1px rgba(0, 0, 0, .3);
+	}
+	
+	.main1 .main1_rt .tit h3 {
+		text-shadow: 0 1px 0px rgba(255, 255, 255, 1), 0 -1px 1px rgba(0, 0, 0, .3);
+	}
+	
+	.main1 .main1_r .pvid .tit h2 {
+		/*text-shadow: 0 1px 0px rgba(255,255,255,1), 0 -1px 1px rgba(0,0,0,.3);*/
+	}
+	.main2 h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #534a44;
+    text-align: center;
+    }
+</style>
+<script>
+	//页面单独使用的js
+	$('.banner').slick({
+		dots: true,
+		autoplay: true, //自动播放
+		autoplaySpeed: 3000, //自动播放间隔
+		arrows: false, //左右箭头
+	})
+	$('.banner2').slick({
+		dots: true,
+		autoplay: true, //自动播放
+		autoplaySpeed: 3000, //自动播放间隔
+		arrows: false, //左右箭头
+	})
+</script>
